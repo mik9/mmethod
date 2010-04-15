@@ -41,7 +41,7 @@ public:
     Widget(QWidget *parent = 0);
     ~Widget();
 private:
-    int                 max(int,int);
+    double              abs(double x);
     void                fillTables();
     int                 calc();
     int                 checkSum(double*);

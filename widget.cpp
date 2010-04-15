@@ -175,7 +175,13 @@ void Widget::getDatasFromFile()
         }
     }
     direction=list.last();
-    direction.resize(direction.size()-1);
+    for(int i=direction.length()-1;i>=0;i--)
+    {
+        if(direction[i]==QChar('\n'))
+        {
+            direction.resize(i-1);
+        }
+    }
     double** tempA=new double*[nEq];
     double* tempB=new double[nEq];
     rel=new QStringList;
@@ -208,6 +214,7 @@ void Widget::getDatasFromFile()
     fin.close();
     m_input->set(nEq,nArgs);
     m_input->setData(tempA,rel,tempB,tempF,direction);
+    qDebug() << direction;
 
     //чистка
     for(int i=0;i<nEq;i++)
@@ -298,7 +305,7 @@ void Widget::fillTables()
                 else
                     t=tr(" + ");
             }
-            t+=QString::number(f[i]);
+            t+=QString::number(abs(f[i]));
         }
         t+=tr("x%1").arg(QString::number(i+1));
         restr+=tr("x%1, ").arg(QString::number(i+1));
@@ -359,10 +366,11 @@ void Widget::fillTables()
     myResize(size().width(),QApplication::desktop()->height()-100);
     m_isTables=true;
 }
-int Widget::max(int a,int b)
+double Widget::abs(double x)
 {
-    return (a>b)?a:b;
+    return (x<0)?-x:x;
 }
+
 int Widget::calc()
 {
     while(true)
@@ -409,6 +417,7 @@ int Widget::calc()
             }
             if(c)
             {
+                simplex.pop_back();
                 return RESULT_CYCLE;
             }
         }
