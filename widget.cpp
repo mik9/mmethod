@@ -16,7 +16,7 @@ Widget::Widget(QWidget *parent) : QWidget (parent)
     p2->setCheckable(true);
     p2->setChecked(true);
     QPushButton* p3=new QPushButton(tr("Очистити результати"));
-    QPushButton* pH=new QPushButton(tr("Хелп мі!!!!!!!!!!!!"));
+    QPushButton* pH=new QPushButton(tr("Допомога"));
     p1->setMinimumWidth(160);
     p2->setMinimumWidth(200);
     p3->setMinimumWidth(200);
