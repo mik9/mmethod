@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\widget.o
+./debug\equation.o
+./debug\function.o
+./debug\inputWidget.o
+./debug\STable.o
+./debug\moc_widget.o
+./debug\moc_equation.o
+./debug\moc_function.o
+./debug\moc_inputWidget.o
+);
