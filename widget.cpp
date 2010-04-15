@@ -183,6 +183,11 @@ void Widget::getDatasFromFile()
     {
         tempA[i]=new double[nArgs];
         QStringList list=QString(fin.readLine(100)).split(" ",QString::SkipEmptyParts);
+        if(list.size()!=nArgs+2)
+        {
+            displayFileError();
+            return;
+        }
         for(int j=0;j<nArgs;j++)
         {
             tempA[i][j]=list[j].toDouble(&check);
@@ -192,7 +197,7 @@ void Widget::getDatasFromFile()
                 return;
             }
         }
-        rel->append(list[list.size()-2]);
+        rel->append(list[nArgs]);
         tempB[i]=list.last().toDouble(&check);
         if(!check)
         {
