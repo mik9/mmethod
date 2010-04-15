@@ -57,7 +57,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <value key="QtVersionId" type="int">0</value>
-   <value key="ToolChain" type="int">2</value>
+   <value key="ToolChain" type="int">0</value>
    <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">2</value>
    <valuelist key="userEnvironmentChanges" type="QVariantList"/>
@@ -68,7 +68,7 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
    <value key="QtVersionId" type="int">0</value>
-   <value key="ToolChain" type="int">2</value>
+   <value key="ToolChain" type="int">0</value>
    <value key="addQDumper" type=""></value>
    <value key="buildConfiguration" type="int">0</value>
   </valuemap>
@@ -78,59 +78,47 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">ALLUSERSPROFILE=C:\ProgramData</value>
-    <value type="QString">APPDATA=C:\Users\mik\AppData\Roaming</value>
-    <value type="QString">COMMONPROGRAMFILES=C:\Program Files (x86)\Common Files</value>
-    <value type="QString">COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files</value>
-    <value type="QString">COMMONPROGRAMW6432=C:\Program Files\Common Files</value>
-    <value type="QString">COMPUTERNAME=MIK-LAPTOP</value>
-    <value type="QString">COMSPEC=C:\Windows\system32\cmd.exe</value>
-    <value type="QString">FP_NO_HOST_CHECK=NO</value>
-    <value type="QString">FTP_PASSIVE=1</value>
-    <value type="QString">GTK_BASEPATH=C:\Program Files (x86)\GtkSharp\2.12\</value>
-    <value type="QString">HOMEDRIVE=C:</value>
-    <value type="QString">HOMEPATH=\Users\mik</value>
-    <value type="QString">KMP_DUPLICATE_LIB_OK=TRUE</value>
-    <value type="QString">LANG=ru_RU</value>
-    <value type="QString">LOCALAPPDATA=C:\Users\mik\AppData\Local</value>
-    <value type="QString">LOGONSERVER=\\MIK-LAPTOP</value>
-    <value type="QString">NUMBER_OF_PROCESSORS=2</value>
-    <value type="QString">OS=Windows_NT</value>
-    <value type="QString">PATH=C:\Qt\2010.02.1\mingw\bin;C:\Qt\2010.02.1\qt\bin;C:\Program Files (x86)\PC Connectivity Solution\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Python26\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\CMake 2.8\bin;C:\Qt\2010.02.1\mingw\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Qt\2010.02.1\qt\bin;D:\INST\android-sdk-windows\tools;C:\Program Files (x86)\Java;C:\Program Files (x86)\Nmap</value>
-    <value type="QString">PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC</value>
-    <value type="QString">PROCESSOR_ARCHITECTURE=x86</value>
-    <value type="QString">PROCESSOR_ARCHITEW6432=AMD64</value>
-    <value type="QString">PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 23 Stepping 6, GenuineIntel</value>
-    <value type="QString">PROCESSOR_LEVEL=6</value>
-    <value type="QString">PROCESSOR_REVISION=1706</value>
-    <value type="QString">PROGRAMDATA=C:\ProgramData</value>
-    <value type="QString">PROGRAMFILES=C:\Program Files (x86)</value>
-    <value type="QString">PROGRAMFILES(X86)=C:\Program Files (x86)</value>
-    <value type="QString">PROGRAMW6432=C:\Program Files</value>
-    <value type="QString">PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\</value>
-    <value type="QString">PUBLIC=C:\Users\Public</value>
-    <value type="QString">QTDIR=C:/Qt/2010.02.1/qt</value>
-    <value type="QString">SESSIONNAME=Console</value>
-    <value type="QString">SYSTEMDRIVE=C:</value>
-    <value type="QString">SYSTEMROOT=C:\Windows</value>
-    <value type="QString">TEMP=C:\Users\mik\AppData\Local\Temp</value>
-    <value type="QString">TERM=dumb</value>
-    <value type="QString">TMP=C:\Users\mik\AppData\Local\Temp</value>
-    <value type="QString">USERDOMAIN=mik-laptop</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-OOeWGayPRA,guid=9be3dbc17114e4d4708b70154bc72e13</value>
+    <value type="QString">DEFAULTS_PATH=/usr/share/gconf/gnome.default.path</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=us</value>
+    <value type="QString">GDM_LANG=uk_UA.utf8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-iHqDAh</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">HOME=/home/mik</value>
+    <value type="QString">LANG=uk_UA.utf8</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/mik/qtsdk-2010.02/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=mik</value>
+    <value type="QString">MANDATORY_PATH=/usr/share/gconf/gnome.mandatory.path</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-mik</value>
+    <value type="QString">PATH=/home/mik/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/mik</value>
+    <value type="QString">QTDIR=/home/mik/qtsdk-2010.02/qt</value>
+    <value type="QString">SESSION_MANAGER=local/mik-desktop:@/tmp/.ICE-unix/1248,unix/mik-desktop:/tmp/.ICE-unix/1248</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=1282</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iHqDAh/ssh</value>
+    <value type="QString">USER=mik</value>
     <value type="QString">USERNAME=mik</value>
-    <value type="QString">USERPROFILE=C:\Users\mik</value>
-    <value type="QString">VS90COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\Tools\</value>
-    <value type="QString">WINDIR=C:\Windows</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-mik-bOdCs9/database</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg/xdg-gnome:/etc/xdg</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=82d76392d2ba974a17b937234bbf5319-1271344659.536420-246911909</value>
    </valuelist>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
-    <value type="QString">D:/usr/Documents/MO/MO.pro</value>
+    <value type="QString">/home/mik/MO/MO.pro</value>
     <value type="QString">-spec</value>
-    <value type="QString">win32-g++</value>
+    <value type="QString">linux-g++-64</value>
     <value type="QString">-r</value>
+    <value type="QString">CONFIG+=debug</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">c:/qt/2010.02.1/qt/bin/qmake.exe</value>
-   <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">D:/usr/Documents/MO</value>
+   <value key="abstractProcess.command" type="QString">/home/mik/qtsdk-2010.02/qt/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">false</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/mik/MO</value>
   </valuemap>
  </data>
  <data>
@@ -138,58 +126,45 @@
   <valuemap type="QVariantMap">
    <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
    <valuelist key="abstractProcess.Environment" type="QVariantList">
-    <value type="QString">ALLUSERSPROFILE=C:\ProgramData</value>
-    <value type="QString">APPDATA=C:\Users\mik\AppData\Roaming</value>
-    <value type="QString">COMMONPROGRAMFILES=C:\Program Files (x86)\Common Files</value>
-    <value type="QString">COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files</value>
-    <value type="QString">COMMONPROGRAMW6432=C:\Program Files\Common Files</value>
-    <value type="QString">COMPUTERNAME=MIK-LAPTOP</value>
-    <value type="QString">COMSPEC=C:\Windows\system32\cmd.exe</value>
-    <value type="QString">FP_NO_HOST_CHECK=NO</value>
-    <value type="QString">FTP_PASSIVE=1</value>
-    <value type="QString">GTK_BASEPATH=C:\Program Files (x86)\GtkSharp\2.12\</value>
-    <value type="QString">HOMEDRIVE=C:</value>
-    <value type="QString">HOMEPATH=\Users\mik</value>
-    <value type="QString">KMP_DUPLICATE_LIB_OK=TRUE</value>
-    <value type="QString">LANG=ru_RU</value>
-    <value type="QString">LOCALAPPDATA=C:\Users\mik\AppData\Local</value>
-    <value type="QString">LOGONSERVER=\\MIK-LAPTOP</value>
-    <value type="QString">NUMBER_OF_PROCESSORS=2</value>
-    <value type="QString">OS=Windows_NT</value>
-    <value type="QString">PATH=C:\Qt\2010.02.1\mingw\bin;C:\Qt\2010.02.1\qt\bin;C:\Program Files (x86)\PC Connectivity Solution\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Python26\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\CMake 2.8\bin;C:\Qt\2010.02.1\mingw\bin;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Qt\2010.02.1\qt\bin;D:\INST\android-sdk-windows\tools;C:\Program Files (x86)\Java;C:\Program Files (x86)\Nmap</value>
-    <value type="QString">PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC</value>
-    <value type="QString">PROCESSOR_ARCHITECTURE=x86</value>
-    <value type="QString">PROCESSOR_ARCHITEW6432=AMD64</value>
-    <value type="QString">PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 23 Stepping 6, GenuineIntel</value>
-    <value type="QString">PROCESSOR_LEVEL=6</value>
-    <value type="QString">PROCESSOR_REVISION=1706</value>
-    <value type="QString">PROGRAMDATA=C:\ProgramData</value>
-    <value type="QString">PROGRAMFILES=C:\Program Files (x86)</value>
-    <value type="QString">PROGRAMFILES(X86)=C:\Program Files (x86)</value>
-    <value type="QString">PROGRAMW6432=C:\Program Files</value>
-    <value type="QString">PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\</value>
-    <value type="QString">PUBLIC=C:\Users\Public</value>
-    <value type="QString">QTDIR=C:/Qt/2010.02.1/qt</value>
-    <value type="QString">SESSIONNAME=Console</value>
-    <value type="QString">SYSTEMDRIVE=C:</value>
-    <value type="QString">SYSTEMROOT=C:\Windows</value>
-    <value type="QString">TEMP=C:\Users\mik\AppData\Local\Temp</value>
-    <value type="QString">TERM=dumb</value>
-    <value type="QString">TMP=C:\Users\mik\AppData\Local\Temp</value>
-    <value type="QString">USERDOMAIN=mik-laptop</value>
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-OOeWGayPRA,guid=9be3dbc17114e4d4708b70154bc72e13</value>
+    <value type="QString">DEFAULTS_PATH=/usr/share/gconf/gnome.default.path</value>
+    <value type="QString">DESKTOP_SESSION=gnome</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">GDMSESSION=gnome</value>
+    <value type="QString">GDM_KEYBOARD_LAYOUT=us</value>
+    <value type="QString">GDM_LANG=uk_UA.utf8</value>
+    <value type="QString">GNOME_DESKTOP_SESSION_ID=this-is-deprecated</value>
+    <value type="QString">GNOME_KEYRING_CONTROL=/tmp/keyring-iHqDAh</value>
+    <value type="QString">GTK_MODULES=canberra-gtk-module</value>
+    <value type="QString">HOME=/home/mik</value>
+    <value type="QString">LANG=uk_UA.utf8</value>
+    <value type="QString">LD_LIBRARY_PATH=/home/mik/qtsdk-2010.02/lib/qtcreator:</value>
+    <value type="QString">LOGNAME=mik</value>
+    <value type="QString">MANDATORY_PATH=/usr/share/gconf/gnome.mandatory.path</value>
+    <value type="QString">ORBIT_SOCKETDIR=/tmp/orbit-mik</value>
+    <value type="QString">PATH=/home/mik/qtsdk-2010.02/qt/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games</value>
+    <value type="QString">PWD=/home/mik</value>
+    <value type="QString">QTDIR=/home/mik/qtsdk-2010.02/qt</value>
+    <value type="QString">SESSION_MANAGER=local/mik-desktop:@/tmp/.ICE-unix/1248,unix/mik-desktop:/tmp/.ICE-unix/1248</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SPEECHD_PORT=7560</value>
+    <value type="QString">SSH_AGENT_PID=1282</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/keyring-iHqDAh/ssh</value>
+    <value type="QString">USER=mik</value>
     <value type="QString">USERNAME=mik</value>
-    <value type="QString">USERPROFILE=C:\Users\mik</value>
-    <value type="QString">VS90COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\Tools\</value>
-    <value type="QString">WINDIR=C:\Windows</value>
+    <value type="QString">XAUTHORITY=/var/run/gdm/auth-for-mik-bOdCs9/database</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg/xdg-gnome:/etc/xdg</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/</value>
+    <value type="QString">XDG_SESSION_COOKIE=82d76392d2ba974a17b937234bbf5319-1271344659.536420-246911909</value>
    </valuelist>
    <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
    <valuelist key="abstractProcess.arguments" type="QVariantList">
     <value type="QString">-j3</value>
     <value type="QString">-w</value>
    </valuelist>
-   <value key="abstractProcess.command" type="QString">C:/Qt/2010.02.1/mingw/bin/mingw32-make.exe</value>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
    <value key="abstractProcess.enabled" type="bool">true</value>
-   <value key="abstractProcess.workingDirectory" type="QString">D:/usr/Documents/MO</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/mik/MO</value>
    <value key="makeCmd" type="QString"></value>
    <valuelist key="makeargs" type="QVariantList">
     <value type="QString">-j3</value>

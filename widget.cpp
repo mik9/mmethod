@@ -175,7 +175,7 @@ void Widget::getDatasFromFile()
         }
     }
     direction=list.last();
-    direction.resize(direction.size()-2);
+    direction.resize(direction.size()-1);
     double** tempA=new double*[nEq];
     double* tempB=new double[nEq];
     rel=new QStringList;

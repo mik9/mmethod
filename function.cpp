@@ -46,6 +46,15 @@ void function::setData(double *f, QString d)
     {
         num[i]->setText(QString::number(f[i]));
     }
+    if(d==tr("min"))
+    {
+        relation.setCurrentIndex(0);
+    }
+    else
+    {
+        relation.setCurrentIndex(1);
+    }
+    qDebug() << d;
     tRelation=d;
 }
 
