@@ -135,8 +135,8 @@ void inputWidget::argsChanged(int n)
 
 void inputWidget::set(int _nEq, int _nArgs)
 {
-    setEq(_nEq);
-    setArgs(_nArgs);
+    boxEq.setValue(_nEq);
+    boxArgs.setValue(_nArgs);
 }
 void inputWidget::setEq(int e)
 {
