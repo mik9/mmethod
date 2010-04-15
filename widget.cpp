@@ -7,7 +7,7 @@ Widget::Widget(QWidget *parent) : QWidget (parent)
     mainLayout=new QVBoxLayout(this);
     m_input=new inputWidget;
     m_help=new QWebView;
-    m_help->load(QUrl("help.html"));
+    m_help->load(QUrl("help/help.html"));
 
     QHBoxLayout* v=new QHBoxLayout;
     QPushButton* p1=new QPushButton(tr("Почати розрахунки"));
