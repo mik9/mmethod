@@ -333,19 +333,35 @@ void Widget::fillTables()
         }
         tablesLayout->addWidget(tables.last());
     }
+    QString res;
+    int* ires;
     switch(m_result)
     {
         case RESULT_SUCCESS:
             tablesLayout->addWidget(new QLabel(tr("Відповідь:")));
+            ires=new int[nArgs+2*nEq];
+            res=tr("x = (");
+            for(int i=0;i<nArgs+2*nEq;i++)
+            {
+                ires[i]=0;
+            }
             for(int i=0;i<nEq;i++)
             {
-                tablesLayout->addWidget(new QLabel(tr("x%1 = %2").arg(QString::number(simplex.last()->basis[i]+1),QString::number(simplex.last()->B[i]))));
+                ires[simplex.last()->basis[i]]=simplex.last()->B[i];
             }
+            for(int i=0;i<nArgs+2*nEq;i++)
+            {
+                res+=tr("%1, ").arg(QString::number(ires[i]));
+            }
+            res.resize(res.size()-2);
+            res+=tr(")");
+            delete [] ires;
+            tablesLayout->addWidget(new QLabel(res));
             tablesLayout->addWidget(new QLabel(tr("z = %1").arg(QString::number(simplex.last()->sumB1))));
             break;
         case RESULT_CYCLE:
             QMessageBox::critical(NULL,tr(""),tr("Зациклення."),QMessageBox::Ok);
-            tablesLayout->addWidget(new QLabel(tr("Зациклювання.")));
+            tablesLayout->addWidget(new QLabel(tr("Зациклення. Задача розв'язку не має.")));
             break;
         case RESULT_NO:
             QMessageBox::information(NULL,tr(""),tr("Розв'язок М-задачі знайдено, вихідна задача розв'язку немає."),QMessageBox::Ok);
