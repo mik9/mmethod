@@ -166,22 +166,24 @@ void Widget::getDatasFromFile()
     double* tempF=new double[nArgs];
     for(int i=0;i<nArgs;i++)
     {
-        tempF[i]=list[i].toDouble(&check);
-        if(!check)
-        {
-            displayFileError();
-            delete [] tempF;
-            return;
-        }
+        tempF[i]=list[i].toDouble();
     }
+
     direction=list.last();
-    for(int i=direction.length()-1;i>=0;i--)
+    if(direction.indexOf(tr("max"))!=-1)
     {
-        if(direction[i]==QChar('\n'))
-        {
-            direction.resize(i-1);
-        }
+        direction=tr("max");
     }
+    else if(direction.indexOf(tr("min"))!=-1)
+    {
+        direction=tr("min");
+    }
+    else
+    {
+        displayFileError();
+        return;
+    }
+
     double** tempA=new double*[nEq];
     double* tempB=new double[nEq];
     rel=new QStringList;
@@ -214,7 +216,6 @@ void Widget::getDatasFromFile()
     fin.close();
     m_input->set(nEq,nArgs);
     m_input->setData(tempA,rel,tempB,tempF,direction);
-    qDebug() << direction;
 
     //чистка
     for(int i=0;i<nEq;i++)
@@ -289,7 +290,7 @@ void Widget::fillTables()
     tablesScrollArea=new QScrollArea;
     tablesGroupBox=new QGroupBox;
     tablesLayout=new QVBoxLayout;
-    QString _f("f = ");
+    QString _f("z = ");
     QString restr;
     for(int i=0;i<nArgs+2*nEq;i++)
     {

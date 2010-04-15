@@ -54,7 +54,6 @@ void function::setData(double *f, QString d)
     {
         relation.setCurrentIndex(1);
     }
-    qDebug() << d;
     tRelation=d;
 }
 
