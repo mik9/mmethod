@@ -213,11 +213,11 @@ QTableWidget* STable::getTable()
 
     for(int i=0;i<nArgs+2*nEq;i++)
     {
-        t->setItem(nEq  ,i+3,new QTableWidgetItem((new QString)->sprintf("%3.3f",sum1[i])));
-        QString c=(new QString)->sprintf("%3.3f",sum2[i]);
-        if(sum2[i]==DBL_MAX )
+        QString c=(new QString)->sprintf("%3.3f",sum1[i]);
+        if(sum1[i]==DBL_MAX )
             c="M";
         t->setItem(nEq+1,i+3,new QTableWidgetItem(c));
+        t->setItem(nEq  ,i+3,new QTableWidgetItem((new QString)->sprintf("%3.3f",sum2[i])));
     }
     t->setItem(nEq  ,2,new QTableWidgetItem((new QString)->sprintf("%3.3f",sumB1)));
     t->setItem(nEq+1,2,new QTableWidgetItem((new QString)->sprintf("%3.3f",sumB2)));
