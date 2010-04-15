@@ -55,6 +55,24 @@ void STable::calcSums(double* f)
             sum1[i]=0;
             for(int j=0;j<nEq;j++)
             {
+                double AA=A[j][i];
+                double CC=(C[j]==-DBL_MAX ) ? 0 : C[j];
+                sum1[i]+=AA*CC;
+            }
+            sum1[i]-=f[i];
+    }
+    sumB1=0;
+    for(int i=0;i<nEq;i++)
+    {
+            double CC=(C[i]==-DBL_MAX ) ? 0 : C[i];
+            sumB1+=B[i]*CC;
+    }
+
+    for(int i=0;i<nArgs+2*nEq;i++)
+    {
+            sum2[i]=0;
+            for(int j=0;j<nEq;j++)
+            {
                 bool b=false;
                 for(int z=0;z<nEq;z++)
                     if(basis[z]==i)
@@ -64,34 +82,15 @@ void STable::calcSums(double* f)
                     }
                 if(b)
                     break;
-                double AA=A[j][i];
-                double CC=(C[j]==-DBL_MAX ) ? -1 : 0;
-                sum1[i]+=AA*CC;
-            }
-    }
-    sumB1=0;
-    for(int i=0;i<nEq;i++)
-    {
-            double CC=(C[i]==-DBL_MAX ) ? -1 : 0;
-            sumB1+=B[i]*CC;
-    }
-
-    for(int i=0;i<nArgs+2*nEq;i++)
-    {
-            sum2[i]=0;
-            for(int j=0;j<nEq;j++)
-            {
                     double AA=A[j][i];
-                    double CC=(C[j]==-DBL_MAX ) ? 0 : C[j];
+                    double CC=(C[j]==-DBL_MAX ) ? -1 : 0;
                     sum2[i]+=AA*CC;
             }
-            double F=f[i];
-            sum2[i]-=F;
     }
     sumB2=0;
     for(int i=0;i<nEq;i++)
     {
-            double CC=(C[i]==-DBL_MAX ) ? 0 : C[i];
+            double CC=(C[i]==-DBL_MAX ) ? -1 : 0;
             sumB2+=B[i]*CC;
     }
 }

@@ -333,7 +333,7 @@ void Widget::fillTables()
             {
                 tablesLayout->addWidget(new QLabel(tr("x%1 = %2").arg(QString::number(simplex.last()->basis[i]+1),QString::number(simplex.last()->B[i]))));
             }
-            tablesLayout->addWidget(new QLabel(tr("f = %1").arg(QString::number(simplex.last()->sumB2))));
+            tablesLayout->addWidget(new QLabel(tr("f = %1").arg(QString::number(simplex.last()->sumB1))));
             break;
         case RESULT_CYCLE:
             QMessageBox::critical(NULL,tr(""),tr("Зациклення."),QMessageBox::Ok);
